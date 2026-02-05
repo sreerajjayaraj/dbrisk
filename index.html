@@ -1,13 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>DB‑RISK — Enterprise Database Certification</title>
+  <style>
+    :root{--bg:#0b0f16;--card:#111827;--txt:#e5e7eb;--mut:#9ca3af;--acc:#60a5fa;--ok:#34d399}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--txt)}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px 16px 70px}
+    .pill{display:inline-block;background:rgba(96,165,250,.12);color:var(--acc);border:1px solid rgba(96,165,250,.25);padding:6px 10px;border-radius:999px;font-size:12px}
+    h1{font-size:40px;margin:12px 0 8px;letter-spacing:-.3px}
+    h2{margin:0 0 10px}
+    p{color:var(--mut);line-height:1.6;margin:10px 0}
+    .hero{display:grid;grid-template-columns:1.35fr .65fr;gap:14px;align-items:start;margin-top:12px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-block;padding:11px 14px;border-radius:12px;text-decoration:none;font-weight:900}
+    .btn.primary{background:var(--acc);color:#071018}
+    .btn.ghost{border:1px solid rgba(255,255,255,.16);color:var(--txt)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media(max-width:900px){.grid3{grid-template-columns:1fr}}
+    img{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,.12)}
+    ul,ol{margin:8px 0 0 18px;color:var(--mut)}
+    code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px}
+    .note{font-size:12px;color:var(--mut)}
+    .hr{height:1px;background:rgba(255,255,255,.10);margin:14px 0}
+    .tag{display:inline-flex;align-items:center;gap:8px;background:rgba(52,211,153,.10);border:1px solid rgba(52,211,153,.25);color:var(--ok);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}
+    .footer{margin-top:22px;color:var(--mut);font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="pill">Agentless • Executable‑free • Read‑only • Client‑controlled reporting</div>
+    <h1>DB‑RISK Enterprise Certification</h1>
+    <p>Generate a board‑ready <b>Database Risk & Capacity Certification</b> using a read‑only snapshot. Runs on the client machine using trusted vendor tools (<code>psql</code>, <code>sqlcmd</code>, <code>mongosh</code>). No agents. No daemons. No servers.</p>
 
-<html><body style="background:#0b0f16;color:white">
-<h1>DB-RISK</h1>
-<a href="https://paypal.me/Sreerajjay/9000">9000 AED</a><br>
-<a href="https://paypal.me/Sreerajjay/3500">3500 AED</a><br>
-<a href="https://paypal.me/Sreerajjay/60000">60000 AED</a>
-<div id="paidCard" style="display:none">
-<a href="thankyou.html">Start download</a>
-</div>
-<script>
-try{const t=localStorage.getItem("DBRISK_RETURNED_AT");if(t&&Date.now()-t<3600000)paidCard.style.display="";}catch(e){}
-</script>
-</body></html>
+    <div class="hero">
+      <div class="card">
+        <h2>Demo</h2>
+        <img src="assets/demo.gif" alt="Demo"/>
+        <p class="note">Demo uses synthetic data.</p>
+      </div>
+
+      <div class="card">
+        <h2>What you get</h2>
+        <div class="tag">✅ Board‑ready report output</div>
+        <ul>
+          <li>Risk rating + top findings</li>
+          <li>Capacity overview + growth signals</li>
+          <li>Evidence appendix (read‑only)</li>
+        </ul>
+        <div class="hr"></div>
+        <h2>How delivery works</h2>
+        <ol>
+          <li>Pay via PayPal</li>
+          <li>PayPal returns to <code>thankyou.html</code></li>
+          <li>Download starts automatically</li>
+        </ol>
+        <p class="note">Recommended: enable PayPal <b>Auto Return</b> to <code>https://sreerajjayaraj.github.io/dbrisk/thankyou.html</code>.</p>
+        <div class="cta">
+          <a class="btn primary" href="#pricing">Choose a plan</a>
+          <a class="btn ghost" href="#how">How to use</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>Screenshots</h2>
+      <div class="grid3">
+        <img src="assets/screen1.png" alt="Collector run"/>
+        <img src="assets/screen2.png" alt="AI report generation"/>
+        <img src="assets/screen3.png" alt="Board-ready output"/>
+      </div>
+    </div>
+
+    <!-- Hidden: appears only after Return URL is triggered -->
+    <div class="card" id="paidCard" style="margin-top:12px; display:none;">
+      <h2>Payment detected</h2>
+      <p>If you just completed PayPal checkout and returned here, click below to start your download.</p>
+      <div class="cta">
+        <a class="btn primary" href="thankyou.html">Start download</a>
+      </div>
+      <p class="note">This button appears only after you return from PayPal.</p>
+    </div>
+
+    <div class="card" id="pricing" style="margin-top:12px;">
+      <h2>Pricing (3 plans)</h2>
+      <div class="grid3">
+        <div class="card" style="background:#0f172a;">
+          <b>One‑Off Certification</b>
+          <p>Single environment certification. Output: <b>report.pdf</b>.</p>
+          <div class="cta"><a class="btn primary" href="https://paypal.me/Sreerajjay/9000" target="_blank" rel="noopener">Pay with PayPal (9,000 AED)</a></div>
+        </div>
+
+        <div class="card" style="background:#0f172a;">
+          <b>Monthly Subscription</b>
+          <p>Manual monthly payment (beginner‑friendly).</p>
+          <div class="cta"><a class="btn primary" href="https://paypal.me/Sreerajjay/3500" target="_blank" rel="noopener">Pay with PayPal (3,500 AED)</a></div>
+          <p class="note">Customer pays monthly using this same link.</p>
+        </div>
+
+        <div class="card" style="background:#0f172a;">
+          <b>Enterprise License</b>
+          <p>Unlimited internal runs. Yearly renewal.</p>
+          <div class="cta"><a class="btn primary" href="https://paypal.me/Sreerajjay/60000" target="_blank" rel="noopener">Pay with PayPal (60,000 AED)</a></div>
+        </div>
+      </div>
+      <p class="note" style="margin-top:10px">After payment, PayPal should return to <code>https://sreerajjayaraj.github.io/dbrisk/thankyou.html</code> (Auto Return). If the buyer is not returned automatically, they can click “Return to merchant”.</p>
+    </div>
+
+    <div class="card" id="how" style="margin-top:12px;">
+      <h2>How to Use</h2>
+      <ol>
+        <li>Click a plan and pay via PayPal.</li>
+        <li>PayPal returns to <code>thankyou.html</code> and the ZIP download starts.</li>
+        <li>Unzip the pack.</li>
+        <li>Run the scripts and generate <code>report.pdf</code> locally.</li>
+      </ol>
+      <p class="note">This is a static site (GitHub Pages). It improves UX but does not fully verify payment.</p>
+    </div>
+
+    <div class="card" id="faq" style="margin-top:12px;">
+      <h2>FAQ</h2>
+      <p><b>Does it install anything?</b><br><span class="note">No. The approach is agentless and uses existing vendor tools.</span></p>
+      <p><b>Is the download button visible to everyone?</b><br><span class="note">No. It appears only after the buyer reaches the Return URL (thank‑you page) in the last 60 minutes.</span></p>
+      <p><b>Can the GitHub download link be shared?</b><br><span class="note">Yes. Static sites can’t fully lock downloads without a backend. This setup is “low maintenance”.</span></p>
+    </div>
+
+    <div class="footer">© 2026 DB‑RISK • Zero servers • GitHub Pages + PayPal + GitHub Releases</div>
+  </div>
+
+  <script>
+  (function(){
+    try {
+      const ts = parseInt(localStorage.getItem("DBRISK_RETURNED_AT") || "0", 10);
+      const now = Date.now();
+      const maxAgeMs = 60 * 60 * 1000; // 60 minutes
+      const card = document.getElementById("paidCard");
+      if(card && ts && (now - ts) < maxAgeMs) {
+        card.style.display = "";
+      }
+    } catch(e) {}
+  })();
+  </script>
+</body>
+</html>
