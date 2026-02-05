@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><title>DB‑RISK</title></head>
+<body style="background:#0b0f16;color:white;font-family:Arial;padding:30px">
+<h1>DB‑RISK Enterprise Certification</h1>
+
+<p>Auto Return URL (PayPal): https://sreerajjayaraj.github.io/dbrisk/thankyou.html</p>
+
+<h3>Pricing</h3>
+<p>One‑Off 9000 AED <a href="https://paypal.me/Sreerajjay/9000" target="_blank">PayPal</a></p>
+<p>Monthly 3500 AED <a href="https://paypal.me/Sreerajjay/3500" target="_blank">PayPal</a></p>
+<p>Enterprise 60000 AED <a href="https://paypal.me/Sreerajjay/60000" target="_blank">PayPal</a></p>
+
+<div id="paidCard" style="display:none;border:1px solid #444;padding:10px;margin-top:20px">
+<b>Already paid?</b><br>
+<a href="thankyou.html">Start download</a>
+</div>
+
+<script>
+(function(){
+ try{
+  const t=parseInt(localStorage.getItem("DBRISK_RETURNED_AT")||"0");
+  if(Date.now()-t<60*60*1000) document.getElementById("paidCard").style.display="block";
+ }catch(e){}
+})();
+</script>
+
+<h3>How it works</h3>
+<ol>
+<li>Pay via PayPal</li>
+<li>Return to thankyou.html</li>
+<li>ZIP downloads</li>
+</ol>
+
+</body></html>
