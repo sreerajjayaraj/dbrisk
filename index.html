@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>DB‑RISK Enterprise Certification</title>
+  <style>
+    :root{--bg:#0b0f16;--card:#111827;--txt:#e5e7eb;--mut:#9ca3af;--acc:#60a5fa}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--txt)}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 16px 64px}
+    .pill{display:inline-block;background:rgba(96,165,250,.12);color:var(--acc);border:1px solid rgba(96,165,250,.25);padding:6px 10px;border-radius:999px;font-size:12px}
+    h1{font-size:36px;margin:10px 0 8px}
+    h2{margin:0 0 10px}
+    p{color:var(--mut);line-height:1.55}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:14px;align-items:start}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800}
+    .btn.primary{background:var(--acc);color:#071018}
+    .btn.ghost{border:1px solid rgba(255,255,255,.16);color:var(--txt)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media(max-width:900px){.grid3{grid-template-columns:1fr}}
+    video,img{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,.12)}
+    code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px}
+    ul,ol{margin:8px 0 0 18px;color:var(--mut)}
+    .k{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .note{font-size:12px;color:var(--mut)}
+    .footer{margin-top:22px;color:var(--mut);font-size:12px}
+    .hr{height:1px;background:rgba(255,255,255,.10);margin:14px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="pill">Agentless • Executable‑free • Read‑only • Client‑controlled OpenAI reporting</div>
+    <h1>DB‑RISK Enterprise Certification</h1>
+    <p>Generate a board‑ready <b>Database Risk & Capacity Certification</b> from a read‑only snapshot. Runs only on the client’s machine using trusted vendor tools (<code>psql</code>, <code>sqlcmd</code>, <code>mongosh</code>, <code>curl</code>). No agents. No daemons. No on‑site infrastructure.</p>
+
+    <div class="hero">
+      <div class="card">
+        <h2>Demo (MP4)</h2>
+        <video controls src="assets/demo.mp4" poster="assets/video_poster.png"></video>
+        <p class="note">Demo uses synthetic data.</p>
+      </div>
+
+      <div class="card">
+        <h2>Why it’s “risk‑free” for companies</h2>
+        <ul>
+          <li>No executables, no background services</li>
+          <li>Read‑only collection (operator‑run scripts)</li>
+          <li>Local redaction; client controls the OpenAI key</li>
+          <li>Outputs are files: <span class="k">snapshot.json</span>, <span class="k">report.pdf</span></li>
+        </ul>
+        <div class="cta">
+          <a class="btn primary" href="#pricing">Choose a plan</a>
+          <a class="btn ghost" href="#how">How to use</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid3">
+      <div class="card"><b>Executive‑ready</b><p>Risk rating, capacity forecast, and prioritized actions.</p></div>
+      <div class="card"><b>Windows + Linux</b><p>Separate scripts per OS and database.</p></div>
+      <div class="card"><b>Client‑only</b><p>Runs on the client’s resources. No vendor access required.</p></div>
+    </div>
+
+    <div class="card" id="screens" style="margin-top:12px;">
+      <h2>Screenshots</h2>
+      <div class="grid3">
+        <img src="assets/screen1_terminal.png" alt="Unlock + Collect"/>
+        <img src="assets/screen2_snapshot.png" alt="Redacted Snapshot"/>
+        <img src="assets/screen3_report.png" alt="Board-ready Report"/>
+      </div>
+    </div>
+
+    <div class="card" id="pricing" style="margin-top:12px;">
+      <h2>Pricing (3 plans)</h2>
+      <div class="grid3">
+        <div class="card" style="background:#0f172a;">
+          <b>One‑Off Certification</b>
+          <p>Single environment certification, delivered as <b>report.pdf</b>.</p>
+          <ul>
+            <li>Risk rating + capacity forecast</li>
+            <li>Evidence‑backed top risks</li>
+            <li>Prioritized remediation actions</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="https://paypal.me/Sreerajjay/9000" target="_blank" rel="noopener">Pay with PayPal (9,000 AED)</a>
+          </div>
+          <p class="note">Pay with PayPal using the button above.</p>
+        </div>
+
+        <div class="card" style="background:#0f172a;">
+          <b>Quarterly Subscription</b>
+          <p>Ongoing certification cadence with minimal effort.</p>
+          <ul>
+            <li>Monthly snapshot runs</li>
+            <li>Quarterly certification PDF</li>
+            <li>Trend tracking and action list</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="https://paypal.me/Sreerajjay/3500" target="_blank" rel="noopener">Pay with PayPal (3,500 AED)</a>
+          </div>
+          <p class="note">Personal PayPal “subscription” is usually manual. Customer pays monthly using this same PayPal link.</p>
+        </div>
+
+        <div class="card" style="background:#0f172a;">
+          <b>Enterprise License</b>
+          <p>For larger orgs that run certifications internally.</p>
+          <ul>
+            <li>Unlimited internal runs</li>
+            <li>Internal distribution OK</li>
+            <li>Yearly renewal</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="https://paypal.me/Sreerajjay/60000" target="_blank" rel="noopener">Pay with PayPal (60,000 AED)</a>
+          </div>
+          <p class="note">Pay with PayPal using the button above.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="how" style="margin-top:12px;">
+      <h2>How to Use (Big, Simple)</h2>
+      <p><b>You don’t need support.</b> Everything runs on your machine. You control data and keys.</p>
+
+      <div class="hr"></div>
+
+      <h3 style="margin:0 0 8px;">Step 1 — Pay & Download</h3>
+      <ol>
+        <li>Click a plan above and complete payment on PayPal.</li>
+        <li>After payment, download the ZIP. (Optional: you can configure PayPal “Return URL” to redirect to the ZIP automatically.)</li>
+        <li>Unzip the pack.</li>
+      </ol>
+
+      <h3 style="margin:14px 0 8px;">Step 2 — Unlock</h3>
+      <p class="note">If your pack is license‑locked, use the key you received.</p>
+      <ul>
+        <li><b>Windows</b>: <span class="k">powershell -ExecutionPolicy Bypass -File .\unlock.ps1 -LicenseKey YOUR_KEY</span></li>
+        <li><b>Linux</b>: <span class="k">bash ./unlock.sh YOUR_KEY</span></li>
+      </ul>
+
+      <h3 style="margin:14px 0 8px;">Step 3 — Run the Collector</h3>
+      <ul>
+        <li><b>Windows</b>: <span class="k">UNLOCKED\Windows\&lt;DB&gt;\run.ps1</span></li>
+        <li><b>Linux</b>: <span class="k">UNLOCKED/Linux/&lt;DB&gt;/run.sh</span></li>
+      </ul>
+      <p class="note">Outputs: <span class="k">output/snapshot.json</span> and <span class="k">output/snapshot.redacted.json</span></p>
+
+      <h3 style="margin:14px 0 8px;">Step 4 — Generate the Report</h3>
+      <p>Set your OpenAI key and generate <b>report.pdf</b> locally.</p>
+      <div class="note">
+        <span class="k">python3 UNLOCKED/openai_generate_report.py --snapshot output/snapshot.redacted.json --out_report output/report.json</span><br/>
+        <span class="k">python3 UNLOCKED/report_to_pdf.py --report_json output/report.json --out_pdf output/report.pdf</span>
+      </div>
+
+      <h3 style="margin:14px 0 8px;">Step 5 — Deliverables</h3>
+      <ul>
+        <li><span class="k">output/report.pdf</span> (board‑ready)</li>
+        <li><span class="k">output/report.json</span> (machine‑readable)</li>
+      </ul>
+    </div>
+
+    <div class="footer">© 2026 DB‑RISK • PayPal checkout links are pre‑filled.</div>
+  </div>
+</body>
+</html>
